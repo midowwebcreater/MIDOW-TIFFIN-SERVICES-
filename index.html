@@ -3,279 +3,199 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MIDOW TIFFIN SERVICES — Pune (Rajangaon)</title>
-  <meta name="description" content="MIDOW Tiffin Services — Premium Veg & Non-Veg home-style tiffin delivery in Rajangaon, Pune. Fresh, hygienic meals. Monthly subscriptions available. Contact: 8793727113" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>MIDOW TIFFIN SERVICES — Amravati | Premium Daily Tiffins</title>
+  <meta name="description" content="MIDOW Tiffin Services — Premium daily veg & non-veg tiffins delivered in Amravati. Flexible subscriptions, corporate plans, hygienic packing. Contact: +91 94236 15018" />
+  <meta name="theme-color" content="#0b0b0b">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MIDOW TIFFIN SERVICES — Amravati" />
+  <meta property="og:description" content="Premium daily veg & non-veg tiffins — Monthly subscriptions, corporate plans, fresh home-style meals." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1400&q=80" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MIDOW Tiffin Services"/>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FoodEstablishment",
+    "name":"MIDOW TIFFIN SERVICES",
+    "telephone":"+919423615018",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Rukhmini Nagar, Sant Lahanuji Nagar",
+      "addressLocality":"Amravati",
+      "addressRegion":"Maharashtra",
+      "postalCode":"444606",
+      "addressCountry":"IN"
+    },
+    "description":"Premium daily veg & non-veg tiffins delivered in Amravati. Monthly subscriptions and corporate catering plans.",
+    "url": location.protocol + '//' + location.host,
+    "openingHours":"Mo-Su 07:00-21:00"
+  }
+  </script>
+
   <style>
     :root{
-      --bg1: #fff8f3;
-      --accent: #ff5a1f;
-      --accent2: #ff8a3d;
-      --muted: #6b7280;
-      --card: #ffffff;
-      --radius: 18px;
-      --glass: rgba(255,255,255,0.06);
-      --maxw: 1100px;
+      --bg:#0b0b0b;
+      --card:#0f0f10;
+      --muted:#bdb6a9;
+      --gold:#ffb86b;
+      --accent:#ff6a1f;
+      --glass:rgba(255,255,255,0.03);
+      --radius:16px;
+      --maxw:1100px;
+      --glass-2: rgba(255,255,255,0.04);
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
       margin:0;padding:0;
       font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
-      background:linear-gradient(180deg,var(--bg1),#fbfbfb);
-      color:#111;
+      background:linear-gradient(180deg,#070707,var(--bg));
+      color:#f7f7f7;
       -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
+      line-height:1.5;
     }
-
-    /* Container */
+    a{color:inherit;text-decoration:none}
     .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
 
-    /* Header / Hero */
-    header.hero{
-      background-image: linear-gradient(180deg, rgba(0,0,0,0.36), rgba(0,0,0,0.20)), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1400&q=80');
-      background-size:cover;background-position:center;
-      padding:86px 20px;border-bottom-left-radius:30px;border-bottom-right-radius:30px;color:#fff;position:relative;overflow:hidden;
-    }
-    header .hero-inner{display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-    header .brand{max-width:680px}
-    header h1{margin:0;font-size:32px;letter-spacing:0.2px}
-    header p.lead{margin:10px 0 0;color:rgba(255,255,255,0.95);font-size:16px}
-    .badge{
-      display:inline-block;background:rgba(255,255,255,0.06);padding:8px 12px;border-radius:999px;font-weight:600;color:#fff;margin-bottom:14px;
-      box-shadow:0 6px 22px rgba(0,0,0,0.18);
-    }
-    .cta-row{margin-top:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-    .btn{
-      display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;
-      color:#fff;background:linear-gradient(90deg,var(--accent),var(--accent2));box-shadow:0 12px 30px rgba(255,90,31,0.14);
-    }
-    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.16);color:#fff}
-    .hero-stats{display:flex;gap:18px;align-items:center;margin-top:20px;flex-wrap:wrap}
-    .stat{background:rgba(255,255,255,0.06);padding:10px 14px;border-radius:12px;font-weight:600}
-
-    /* Cards Section */
-    .section{padding:64px 20px}
-    .section h2{font-size:24px;margin:0 0 16px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-    .card{background:var(--card);border-radius:16px;padding:20px;box-shadow:0 12px 30px rgba(16,24,40,0.06);transition:transform .28s, box-shadow .28s;}
-    .card:hover{transform:translateY(-8px);box-shadow:0 22px 40px rgba(16,24,40,0.12)}
-    .card h3{margin:0 0 8px;font-size:18px}
-    .muted{color:var(--muted);font-size:14px}
-    .price{font-weight:800;color:var(--accent);font-size:18px;margin-top:8px}
-
-    /* Menu list */
-    .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-    .menu-item{display:flex;gap:12px;align-items:flex-start}
-    .menu-thumb{width:88px;height:64px;border-radius:10px;background:#eee;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center}
-    .menu-thumb img{width:100%;height:100%;object-fit:cover}
-
-    /* Plans */
-    .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
-    .plan{padding:18px;border-radius:14px;background:linear-gradient(180deg,#fff,#fff);box-shadow:0 10px 30px rgba(16,24,40,0.06);border:1px solid rgba(16,24,40,0.04)}
-    .plan .title{font-weight:700}
-    .plan .cost{color:var(--accent);font-weight:800;font-size:18px;margin-top:8px}
-
-    /* Testimonials */
-    .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:20px}
-    .test{background:#fff;padding:16px;border-radius:12px;box-shadow:0 10px 28px rgba(16,24,40,0.06)}
-
-    /* Contact */
-    footer{background:#111;padding:28px 20px;color:#fff;margin-top:36px;border-top-left-radius:18px;border-top-right-radius:18px}
-    .footer-grid{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-    .phone-bubble{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(90deg,var(--accent),var(--accent2));padding:10px 14px;border-radius:12px;color:#fff;font-weight:700;text-decoration:none}
-
-    /* Floating WhatsApp */
-    .wa-float{
-      position:fixed;right:18px;bottom:18px;z-index:999;
-      background:#25D366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;
-      box-shadow:0 12px 30px rgba(37,211,102,0.18);text-decoration:none;color:#fff;font-size:26px;
+    header {
+      padding:44px 0 40px;
+      border-bottom:1px solid rgba(255,255,255,0.03);
     }
 
-    /* Responsive tweaks */
-    @media (max-width:880px){
-      header h1{font-size:26px}
-      .hero{padding:56px 20px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand {display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--gold));
+      display:flex;align-items:center;justify-content:center;font-weight:800;color:#111;font-size:18px;
     }
 
-    /* subtle entrance animations */
-    .reveal{opacity:0;transform:translateY(18px);animation:reveal .7s forwards}
-    .reveal.delay-1{animation-delay:.12s}
-    .reveal.delay-2{animation-delay:.20s}
-    .reveal.delay-3{animation-delay:.28s}
-    @keyframes reveal{to{opacity:1;transform:none}}
+    .hero{
+      margin-top:28px;background-image:linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.48)), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=2000&q=80');
+      background-size:cover;background-position:center;padding:48px;border-radius:20px;display:flex;gap:28px;align-items:center;flex-wrap:wrap;
+    }
+
+    /* More CSS continues… */
   </style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <div class="brand reveal">
-          <span class="badge">MIDOW TIFFIN SERVICES</span>
-          <h1>MIDOW TIFFIN SERVICES — Pune (Rajangaon)</h1>
-          <p class="lead">Fresh • Hygienic • Home-style Veg & Non-Veg tiffins delivered daily for working professionals, students & PG residents. Monthly subscriptions and single-day orders available.</p>
-
-          <div class="cta-row">
-            <!-- WhatsApp order (uses your number) -->
-            <a class="btn" href="https://wa.me/918793727113?text=Hello%20MIDOW%20Tiffin%20Services%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">
-              📲 Order on WhatsApp
-            </a>
-
-            <!-- Call button -->
-            <a class="btn ghost" href="tel:+918793727113">Call: 8793727113</a>
-          </div>
-
-          <div class="hero-stats" style="margin-top:18px;">
-            <div class="stat">Daily Fresh Cooked</div>
-            <div class="stat">Veg & Non-Veg Options</div>
-            <div class="stat">Flexible Subscriptions</div>
-          </div>
+  <header class="container">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">MT</div>
+        <div>
+          <h1>MIDOW TIFFIN SERVICES</h1>
+          <p>Rukhmini Nagar · Sant Lahanuji Nagar · Amravati</p>
         </div>
+      </div>
 
-        <!-- Right side quick cards -->
-        <div style="min-width:260px;max-width:320px" class="reveal delay-1">
-          <div style="background:linear-gradient(180deg,#fff,#fff);padding:18px;border-radius:16px;box-shadow:0 16px 40px rgba(16,24,40,0.08)">
-            <h3 style="margin:0 0 8px">Today Special</h3>
-            <p style="margin:0;color:var(--muted)">Chicken Curry + Jeera Rice + Salad</p>
-            <div style="margin-top:12px;font-weight:800;color:var(--accent)">₹140 <span style="font-weight:600;color:#666;font-size:13px">per plate</span></div>
-            <div style="margin-top:12px;display:flex;gap:8px">
-              <a class="btn" href="https://wa.me/918793727113?text=I%20want%20the%20Today's%20special%20-%20Chicken%20Curry%20%2B%20Jeera%20Rice">Order</a>
-              <a class="btn ghost" href="#plans">View Plans</a>
-            </div>
-          </div>
+      <div class="contact-row">
+        <a class="phone-pill" href="tel:+919423615018">📞 +91 94236 15018</a>
+        <button class="inquiry-btn" id="openInquiry">📩 Inquiry / Corporate</button>
+      </div>
+    </div>
+
+    <div class="hero container" style="margin-top:18px;">
+      <div class="hero-left">
+        <h2>Premium Daily Tiffins — Fresh, Hygienic, On-Time</h2>
+        <p class="lead">Flexible monthly subscriptions, single-day orders...</p>
+
+        <div class="hero-ctas">
+          <a class="cta-primary" id="waOrderMain" href="https://wa.me/919423615018?text=Hello%20MIDOW...">📲 Order / Inquiry on WhatsApp</a>
+          <a class="cta-secondary" href="#plans">View Plans</a>
         </div>
+      </div>
+
+      <div class="hero-card">
+        <h4>Today’s Special</h4>
+        <div class="small">Chicken Curry + Jeera Rice + Salad</div>
+        <div class="price">₹140 <span class="muted">/ plate</span></div>
       </div>
     </div>
   </header>
 
-  <!-- MENU -->
-  <main>
-    <section class="section container" id="menu">
-      <h2 class="reveal">Our Menu</h2>
-      <p class="muted reveal delay-1">Daily rotating homestyle meals — made fresh, packed hygienically, delivered on time.</p>
+  <main class="container" role="main">
 
-      <div class="menu-grid" style="margin-top:18px;">
-        <div class="card reveal delay-2">
-          <h3>Veg Basic</h3>
-          <p class="muted">4-5 Roti • Seasonal Sabzi • Dal • Rice • Salad</p>
-          <div class="price">₹80 – ₹95</div>
+    <!-- Menu Section Starts -->
+    <section id="menu">
+      <div class="section-head">
+        <h3>Our Menu</h3>
+        <div class="muted">Daily rotating homestyle meals — Veg & Non-Veg options</div>
+        </div>
+        <div class="grid" style="margin-top:16px;">
+        <div class="card">
+          <h4>Veg Basic</h4>
+          <div class="muted">Seasonal sabzi • Dal • Roti • Rice • Salad</div>
+          <div style="margin-top:10px" class="muted">Price: ₹80 – ₹95</div>
+          <div style="margin-top:12px">
+            <a class="btn-send" href="https://wa.me/919423615018?text=Hello%20MIDOW%20Tiffin...">Enquire on WhatsApp</a>
+          </div>
         </div>
 
-        <div class="card reveal delay-3">
-          <h3>Veg Premium</h3>
-          <p class="muted">6 Roti • 2 Sabzi • Dal Fry • Jeera Rice • Weekend Sweet</p>
-          <div class="price">₹110 – ₹130</div>
+        <div class="card">
+          <h4>Veg Premium</h4>
+          <div class="muted">2 sabzi • Dal Fry • Jeera Rice • Weekend sweet</div>
+          <div style="margin-top:10px" class="muted">Price: ₹110 – ₹130</div>
+          <div style="margin-top:12px">
+            <a class="btn-send" href="https://wa.me/919423615018?text=Hi%20MIDOW...">Enquire on WhatsApp</a>
+          </div>
         </div>
 
-        <div class="card reveal delay-2">
-          <h3>Non-Veg Basic</h3>
-          <p class="muted">Chicken Curry (150–180g) • Roti / Rice • Salad</p>
-          <div class="price">₹120 – ₹150</div>
-        </div>
-
-        <div class="card reveal delay-3">
-          <h3>Non-Veg Premium</h3>
-          <p class="muted">Chicken Masala/Fry • Jeera Rice • Roti • Boiled Egg (optional)</p>
-          <div class="price">₹160 – ₹190</div>
+        <div class="card">
+          <h4>Non-Veg Basic</h4>
+          <div class="muted">Chicken curry • Roti / Rice • Salad</div>
+          <div style="margin-top:10px" class="muted">Price: ₹120 – ₹150</div>
         </div>
       </div>
     </section>
 
-    <!-- PLANS -->
-    <section class="section" id="plans">
-      <div class="container">
-        <h2 class="reveal">Subscription Plans</h2>
-        <p class="muted reveal delay-1">Weekly and monthly plans with flexible delivery — pause or cancel anytime.</p>
+    <!-- More sections continue... -->
 
-        <div class="plans reveal delay-2">
-          <div class="plan">
-            <div class="title">Veg Monthly</div>
-            <div class="cost">₹2,300 – ₹2,600</div>
-            <div class="muted" style="margin-top:8px;font-size:13px">Weekdays fresh veg meals • Weekend sweet</div>
-          </div>
-
-          <div class="plan">
-            <div class="title">Non-Veg Monthly</div>
-            <div class="cost">₹3,200 – ₹3,600</div>
-            <div class="muted" style="margin-top:8px;font-size:13px">Includes 2–3 non-veg meals per week • High-protein portions</div>
-          </div>
-
-          <div class="plan">
-            <div class="title">Mixed Plan (Best)</div>
-            <div class="cost">₹3,300 – ₹3,800</div>
-            <div class="muted" style="margin-top:8px;font-size:13px">Weekdays Veg • Weekend Chicken/Biryani • Popular with office teams</div>
-          </div>
-        </div>
-
-        <!-- quick benefits -->
-        <div style="display:flex;gap:12px;margin-top:20px;flex-wrap:wrap" class="reveal delay-3">
-          <div style="background:#fff;padding:12px;border-radius:12px;box-shadow:0 10px 28px rgba(16,24,40,0.06)">Hygienic Packing</div>
-          <div style="background:#fff;padding:12px;border-radius:12px;box-shadow:0 10px 28px rgba(16,24,40,0.06)">On-time Delivery</div>
-          <div style="background:#fff;padding:12px;border-radius:12px;box-shadow:0 10px 28px rgba(16,24,40,0.06)">Customizable Meals</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section container" id="reviews">
-      <h2 class="reveal">Happy Customers</h2>
-      <div class="testimonials reveal delay-1">
-        <div class="test">
-          <strong>Rohit P.</strong>
-          <div class="muted" style="margin-top:6px">"Fresh taste and on-time delivery. Best for MIDC shift workers."</div>
-        </div>
-        <div class="test">
-          <strong>Priya S.</strong>
-          <div class="muted" style="margin-top:6px">"Veg meals feel like home-cooked. Highly recommend the monthly plan."</div>
-        </div>
-        <div class="test">
-          <strong>Vikram M.</strong>
-          <div class="muted" style="margin-top:6px">"Mixed plan is value for money. Weekend biryani is 🔥."</div>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <!-- FOOTER / CONTACT -->
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <div style="font-weight:800;font-size:18px">MIDOW TIFFIN SERVICES</div>
-        <div class="muted" style="margin-top:6px">Pune — Rajangaon MIDC • Fresh home-style meals delivered daily</div>
-      </div>
+  <!-- WhatsApp Floating Button -->
+  <a class="wa-float" href="https://wa.me/919423615018?text=Hello%20MIDOW...">💬</a>
 
-      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-        <a class="phone-bubble" href="tel:+918793727113">📞 8793727113</a>
-        <a class="phone-bubble" href="https://wa.me/918793727113?text=Hello%20MIDOW%20Tiffin%20Services%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">WhatsApp Order</a>
-      </div>
+  <!-- Inquiry Modal -->
+  <div class="modal-backdrop" id="modalBg">
+    <div class="modal">
+      <h3>Send Inquiry</h3>
+      <input class="input" id="inqName" placeholder="Your Name">
+      <input class="input" id="inqPhone" placeholder="Phone Number">
+      <textarea class="textarea" id="inqMsg" placeholder="Your Message"></textarea>
+
+      <button class="btn-send" id="sendInquiryBtn">Send on WhatsApp</button>
+      <button class="btn-ghost" id="closeInquiry">Close</button>
     </div>
-    <div style="max-width:var(--maxw);margin:18px auto 0;padding:0 20px;color:rgba(255,255,255,0.65);font-size:13px">© <span id="year"></span> MIDOW TIFFIN SERVICES — Pune (Rajangaon). All rights reserved.</div>
-  </footer>
-
-  <!-- Floating WhatsApp -->
-  <a class="wa-float" href="https://wa.me/918793727113?text=Hi%20MIDOW%20Tiffin%20Services%2C%20I%20want%20to%20order." target="_blank" rel="noopener" aria-label="Order on WhatsApp">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path d="M20.52 3.48C18.36 1.32 15.45 0 12.24 0 5.74 0 0.61 5.13 0.61 11.63c0 2.05.56 4.05 1.62 5.8L0 24l6.88-2.23c1.64.9 3.5 1.37 5.36 1.37 6.5 0 11.63-5.13 11.63-11.63 0-3.2-1.32-6.12-3.45-8.29z" fill="#fff" opacity=".07"/>
-      <path d="M17.472 14.382c-.32-.16-1.88-.92-2.17-1.02-.29-.1-.5-.16-.71.16-.2.32-.82 1.02-1.01 1.23-.18.21-.36.24-.67.08-.31-.16-1.31-.48-2.5-1.54-.93-.83-1.56-1.86-1.74-2.17-.18-.32-.02-.49.14-.65.14-.14.31-.37.47-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.7-.98-2.33-.25-.63-.5-.54-.69-.55-.18-.01-.39-.01-.6-.01-.2 0-.52.07-.79.32-.27.25-1.03 1.01-1.03 2.46 0 1.44 1.05 2.83 1.2 3.03.14.2 2.08 3.3 5.04 4.5 2.95 1.19 2.95.79 3.48.74.53-.05 1.72-.69 1.96-1.36.25-.67.25-1.24.18-1.36-.07-.11-.26-.17-.56-.32z" fill="#fff"/>
-    </svg>
-  </a>
+  </div>
 
   <script>
-    // set current year
-    document.getElementById('year').innerText = new Date().getFullYear();
+    const modalBg = document.getElementById("modalBg");
+    const openInquiry = document.getElementById("openInquiry");
+    const closeInquiry = document.getElementById("closeInquiry");
+    const sendInquiryBtn = document.getElementById("sendInquiryBtn");
 
-    // small helper: smooth scroll to plans
-    (function(){
-      document.querySelectorAll('a[href^="#"]').forEach(function(a){
-        a.addEventListener('click', function(e){
-          var target = document.querySelector(this.getAttribute('href'));
-          if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
-        });
-      });
-    })();
+    openInquiry.onclick = () => modalBg.style.display = "flex";
+    closeInquiry.onclick = () => modalBg.style.display = "none";
+
+    sendInquiryBtn.onclick = () => {
+      let name = document.getElementById("inqName").value;
+      let phone = document.getElementById("inqPhone").value;
+      let msg = document.getElementById("inqMsg").value;
+
+      let url = `https://wa.me/919423615018?text=Inquiry%20Details:%0AName:%20${name}%0APhone:%20${phone}%0AMessage:%20${msg}`;
+      window.open(url, "_blank");
+    };
   </script>
+
 </body>
 </html>
